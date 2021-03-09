@@ -1,14 +1,36 @@
 section.repository-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
   margin: 48px;
 
   h1 {
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid rgb(223, 223, 223);
   }
 
   ul {
     list-style: none;
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     li {
+      max-width: 550px;
+      width: 100%;
+
+      padding: 30px;
+    
+      border-radius: 5px;
+      background-color: #eee;
+
+      border-left: 5px solid #8257e6;
+      
       &:not(:first-child) {
         margin-top: 16px;
       }
